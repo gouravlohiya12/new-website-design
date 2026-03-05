@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #007bff;
+  --color-secondary: #1a2b48;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply font-sans text-slate-700 bg-white;
+  }
+}
+
+.container {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.btn-primary {
+  @apply bg-primary hover:bg-blue-600 text-white px-6 py-3 rounded font-semibold transition-colors inline-flex items-center gap-2;
+}
+
+.section-title {
+  @apply text-3xl md:text-4xl font-bold text-secondary text-center mb-12;
+}
+
+.section-subtitle {
+  @apply text-primary font-semibold uppercase tracking-wider text-sm text-center block mb-2;
+}
